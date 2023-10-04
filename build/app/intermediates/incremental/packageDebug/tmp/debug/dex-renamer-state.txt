@@ -1,0 +1,4 @@
+#Wed Oct 04 18:00:04 WAT 2023
+base.0=C\:\\Flutter\\personal-projects\\authentication_ui\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
