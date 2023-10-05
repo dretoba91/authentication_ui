@@ -21,7 +21,7 @@ class Onboarding extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Center(
                     child: Image.asset(
@@ -55,7 +55,7 @@ class Onboarding extends StatelessWidget {
                           style: TextStyle(
                               color: Color(0xFF2D4990),
                               fontFamily: "Montserrat",
-                              fontSize: 24,
+                              fontSize: 20,
                               fontWeight: FontWeight.w600),
                         ),
                         TextSpan(
@@ -90,11 +90,11 @@ class Onboarding extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 80,
+                  height: 60,
                 ),
                 Center(
                   child: SizedBox(
-                    height: 50,
+                    height: 40,
                     width: 310,
                     child: ElevatedButton(
                         onPressed: () {
@@ -126,7 +126,7 @@ class Onboarding extends StatelessWidget {
                 ),
                 Center(
                   child: SizedBox(
-                    height: 50,
+                    height: 40,
                     width: 310,
                     child: ElevatedButton(
                         onPressed: () {},

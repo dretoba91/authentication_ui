@@ -22,7 +22,7 @@ class _LoginState extends State<Login> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: 40,
+              height: 50,
             ),
             Center(
               child: Text(
@@ -30,90 +30,111 @@ class _LoginState extends State<Login> {
                 style: TextStyle(
                     color: Color(0xFF000000),
                     fontFamily: "Montserrat",
-                    fontSize: 24,
+                    fontSize: 20,
                     fontWeight: FontWeight.w400),
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 53,
             ),
-            Text(
-              'Log in to your account',
-              style: TextStyle(
-                  color: Color(0xFF000000),
-                  fontFamily: "Montserrat",
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400),
-            ),
-            SizedBox(
-              height: 60,
-            ),
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Enter your username',
-                border: InputBorder.none,
-                filled: true,
-                fillColor: Color(0xFFFFFFFF),
-                labelStyle: TextStyle(
-                    color: Color(0xFF000000),
-                    fontFamily: "Montserrat",
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400),
-              ),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'Enter your password',
-                border: InputBorder.none,
-                filled: true,
-                fillColor: Color(0xFFFFFFFF),
-                labelStyle: TextStyle(
-                    color: Color(0xFF000000),
-                    fontFamily: "Montserrat",
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400),
-              ),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset('assets/images/icon_task_done.png'),
-                    SizedBox(
-                      width: 5,
+            Padding(
+              padding: EdgeInsets.only(right: 10, left: 10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Log in to your account',
+                    style: TextStyle(
+                        color: Color(0xFF000000),
+                        fontFamily: "Montserrat",
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  SizedBox(
+                    height: 40,
+                    width: 330,
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        labelText: 'Enter your username',
+                        border: InputBorder.none,
+                        filled: true,
+                        fillColor: Color(0xFFFFFFFF),
+                        labelStyle: TextStyle(
+                            color: Color(0xFF000000),
+                            fontFamily: "Montserrat",
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
-                    Text(
-                      'Remember Me',
-                      style: TextStyle(
-                          color: Color(0xFF000000),
-                          fontFamily: "Montserrat",
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400),
+                  ),
+                  SizedBox(
+                    height: 43,
+                  ),
+                  SizedBox(
+                    height: 40,
+                    width: 330,
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        labelText: 'Enter your password',
+                        border: InputBorder.none,
+                        filled: true,
+                        fillColor: Color(0xFFFFFFFF),
+                        labelStyle: TextStyle(
+                            color: Color(0xFF000000),
+                            fontFamily: "Montserrat",
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
-                  ],
-                ),
-                Text(
-                  'Forgotten password?',
-                  style: TextStyle(
-                      color: Color(0xFF000000),
-                      fontFamily: "Montserrat",
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400),
-                ),
-              ],
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/icon_task_done.png',
+                            height: 14,
+                            width: 17,
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            'Remember Me',
+                            style: TextStyle(
+                                color: Color(0xFF000000),
+                                fontFamily: "Montserrat",
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        'Forgotten password?',
+                        style: TextStyle(
+                            color: Color(0xFF000000),
+                            fontFamily: "Montserrat",
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
             SizedBox(
-              height: 30,
+              height: 50,
             ),
             Center(
               child: SizedBox(
@@ -125,7 +146,7 @@ class _LoginState extends State<Login> {
                         primary: Color(0xFF2D4990),
                         elevation: 0,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)),
+                            borderRadius: BorderRadius.circular(10)),
                         textStyle: TextStyle(
                             color: Color(0xFF1E1E1E),
                             fontFamily: "Montserrat",
