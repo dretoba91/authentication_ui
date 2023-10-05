@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:authentication_ui/onboarding/onboarding.dart';
+import 'package:authentication_ui/success_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Authentication UI',
       home: Onboarding(),
       theme: ThemeData(
-        fontFamily: 'Montserrat'
+        fontFamily: 'Montserrat',
       ),
     );
   }
