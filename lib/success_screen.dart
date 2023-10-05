@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:authentication_ui/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 
 class AuthSuccessScreen extends StatelessWidget {
@@ -33,18 +34,23 @@ class AuthSuccessScreen extends StatelessWidget {
               SizedBox(
                 height: 60,
               ),
-              RichText(
-                  text: TextSpan(
-                text: 'Continue to Home',
-                style: TextStyle(
-                  color: Color(0xFF2D4990),
-                  fontFamily: "Montserrat",
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500,
-                  decoration: TextDecoration.underline,
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Onboarding()));
+                },
+                child: Text(
+                  'Continue to Home',
+                  style: TextStyle(
+                    color: Color(0xFF2D4990),
+                    fontFamily: "Montserrat",
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500,
+                    decoration: TextDecoration.underline,
+                  ),
                 ),
               )
-              )
+              
               
             ],
           ),

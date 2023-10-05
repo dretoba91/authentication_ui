@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:authentication_ui/authentication/login.dart';
+import 'package:authentication_ui/authentication/signup.dart';
 import 'package:authentication_ui/success_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -129,7 +130,12 @@ class Onboarding extends StatelessWidget {
                     height: 40,
                     width: 310,
                     child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignUp()));
+                        },
                         style: ElevatedButton.styleFrom(
                             elevation: 0,
                             primary: Color(0xFFFFFFFF),
